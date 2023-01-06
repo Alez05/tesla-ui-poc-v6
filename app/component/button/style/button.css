@@ -1,7 +1,7 @@
 /* santa helpers */
-body {
-  background-color: royalblue;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 .button {
   color: royalblue;
   background-color: beige;
@@ -15,9 +15,13 @@ body {
 
   color: #FFFF;
   background-color: #181B21;
+
+  /* text */
+  font-size: 14px;
+  font-family: 'Roboto';
 }
 
 [data-light] {
-  background-color: #FFFF;
-  color: #181B21;
+  background-color: #e3e3e3;
+  color: #000000;
 }
