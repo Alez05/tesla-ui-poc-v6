@@ -14,8 +14,9 @@ const TeslaUIPOCV6 = () => {
       <p>Let's get down to coding!</p>
       <p>This is Alex's project</p>
 
-      <ButtOns>Pekemons</ButtOns>
-      <ButtOns>Pekemons</ButtOns>
+      <ButtOns light>Model S light here</ButtOns>
+      <ButtOns light>Model S</ButtOns>
+
       <ButtOns>Pekemons</ButtOns>
       <ButtOns>Pekemons</ButtOns>
       <ButtOns>sfantul babon</ButtOns>

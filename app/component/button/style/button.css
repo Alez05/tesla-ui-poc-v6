@@ -1,4 +1,23 @@
+/* santa helpers */
+body {
+  background-color: royalblue;
+}
 .button {
   color: royalblue;
   background-color: beige;
+}
+
+[data-button] {
+  width: 256px;
+  border-radius: 20px;
+  height: 40px;
+  border: 0;
+
+  color: #FFFF;
+  background-color: #181B21;
+}
+
+[data-light] {
+  background-color: #FFFF;
+  color: #181B21;
 }
