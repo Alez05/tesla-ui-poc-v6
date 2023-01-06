@@ -1,0 +1,1 @@
+export {HappyText, textLink} from './text'
