@@ -7,7 +7,7 @@ const buttonLink:LinksFunction = () => [
     rel: 'stylesheet',
     href: buttonStyle
   }
-]
+
 
 const ButtOns = ({ children }) => {
   return(
