@@ -13,8 +13,8 @@ const textLink: LinksFunction = () => [
 
 
 
-const HappyText = ({ children }: HappyTextType ) => {
-  return <div data-text >{children}</div>
+const HappyText = ({ children, title, underline }: HappyTextType ) => {
+  return <div data-text data-title={title} data-underline={underline}>{children}</div>
 }
 
 

@@ -3,6 +3,17 @@
 }
 
 [data-text] {
-  color:lime;
-  background-color: red;
+  color: #000000;
+  font-size: 14px;
+  padding: 8px;
+  font-family: 'Roboto';
+}
+
+[data-title] {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+[data-underline] {
+  text-decoration: underline;
 }
