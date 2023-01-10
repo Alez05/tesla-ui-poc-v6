@@ -29,10 +29,9 @@ const buttonLink:LinksFunction = () => [
   },
 ]
 
-const ButtOns = ({ children, light }: ButtOnsType ) => {
+const ButtOns = ({ children, light }: any ) => {
   return(
     <div>
-      <button data-button>{children}</button>
       <button data-button data-light={light}>{children}</button>
     </div>
   )
