@@ -1,4 +1,4 @@
-import { ButtOns, buttonLink, HappyText, textLink } from "~/component"
+import { ButtOns, buttonLink, HappyText, textLink, ChevrOn, chevronLink, boxLink, Box} from "~/component"
 
 import type { LinksFunction } from "@remix-run/node"
 import { globalLink } from "~/component/global/global"
@@ -7,18 +7,22 @@ export const links: LinksFunction = () => [
   ...buttonLink(),
   ...textLink(),
   ...globalLink(),
+  ...chevronLink(),
+  ...boxLink(),
 ]
 
 const TeslaUIPOCV6 = () => {
   return (
     <div>
-      <HappyText title underline>Tesla UI V6 - Proof Of Concept</HappyText>
-      <HappyText title>Tesla UI V6 - Proof Of Concept</HappyText>
-      <HappyText underline>Tesla UI V6 - Proof Of Concept</HappyText>
-      <p>This is Alex's project</p>
+      <HappyText title>Tesla v6</HappyText>
+      <HappyText underline>Touchless Delivery</HappyText>
 
-      <ButtOns light>Model S light here</ButtOns>
-      <ButtOns light>Model S</ButtOns>
+      <ChevrOn/>
+
+      <Box display='flex' gap vertical>
+        <ButtOns light >Model S</ButtOns>
+        <ButtOns>Model Y</ButtOns>
+      </Box>
 
       {/* <ButtOns>Pekemons</ButtOns>
       <ButtOns>Pekemons</ButtOns>
