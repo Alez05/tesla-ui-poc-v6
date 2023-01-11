@@ -1,8 +1,8 @@
-[data-happy-box='flex'] {
+[data-box='flex'] {
   display: flex;
 }
 
-[data-happy-box='grid'] {
+[data-box='grid'] {
   display: inline-grid;
   background-color: hsla(1312312, 100%, 100%, 0.75);
   grid-template-columns: repeat(2, auto);
