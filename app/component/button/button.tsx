@@ -1,6 +1,5 @@
 import buttonStyle from './style/button.css'
 
-
 import type { LinksFunction } from "@remix-run/node"
 import type { ButtOnsType } from './button.type'
 
@@ -30,11 +29,10 @@ const buttonLink:LinksFunction = () => [
   },
 ]
 
-
-const ButtOns = ({ children }: ButtOnsType ) => {
+const ButtOns = ({ children, light }: any ) => {
   return(
     <div>
-      <button className="button">{children}</button>
+      <button data-button data-light={light}>{children}</button>
     </div>
   )
 }

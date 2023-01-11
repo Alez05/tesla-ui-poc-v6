@@ -1,0 +1,123 @@
+[data-box='flex'] {
+  display: flex;
+}
+
+[data-box='grid'] {
+  display: inline-grid;
+  background-color: hsla(1312312, 100%, 100%, 0.75);
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  padding: 8px;
+  width: fit-content;
+}
+
+[data-full-height] {
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+
+  /* background-image: url('/image/background/model-3-mobile'); */
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+[data-full-height][data-section='model-3'] {
+  background-image: url('/image/background/model-3-mobile.jpg');
+}
+
+[data-full-height][data-section='model-y'] {
+  background-image: url('/image/background/model-y-mobile.jpg');
+}
+
+[data-full-height][data-section='model-s'] {
+  background-image: url('/image/background/model-s-mobile.jpg');
+}
+
+[data-full-height][data-section='model-x'] {
+  background-image: url('/image/background/model-x-mobile.jpg');
+}
+
+[data-full-height][data-section='solar-panels'] {
+  background-image: url('/image/background/solar-panels-mobile.jpg');
+}
+
+
+[data-full-height][data-section='solar-roof'] {
+  background-image: url('/image/background/solar-roof-mobile.jpg');
+}
+
+
+[data-full-height][data-section='accessories'] {
+  background-image: url('/image/background/accessories-mobile.jpg');
+}
+
+
+
+@media screen and (min-width: 768px) {
+  [data-full-height][data-section='model-3'] {
+    background-image: url('/image/background/model-3.jpg');
+  }
+
+  [data-full-height][data-section='model-y'] {
+    background-image: url('/image/background/model-y.jpg');
+  }
+
+  [data-full-height][data-section='model-s'] {
+    background-image: url('/image/background/model-s.jpg');
+  }
+
+  [data-full-height][data-section='model-x'] {
+    background-image: url('/image/background/model-x.jpg');
+  }
+
+  [data-full-height][data-section='solar-panel'] {
+    background-image: url('/image/background/solar-panels.jpg');
+  }
+
+  [data-full-height][data-section='solar-roof'] {
+    background-image: url('/image/background/solar-roof.jpg');
+  }
+
+  [data-full-height][data-section='accessories'] {
+    background-image: url('/image/background/accessories.jpg');
+  }
+
+}
+
+
+[data-full-height] > div:last-child {
+  gap: 64px;
+}
+
+[data-align='center'] {
+  align-items: center;
+}
+[data-align='start'] {
+  align-items: start;
+}
+[data-align='end'] {
+  align-items: end;
+}
+
+[data-justify='center'] {
+  justify-content: center;
+}
+
+[data-justify='start'] {
+  justify-content: start;
+}
+
+[data-justify='end'] {
+  justify-content: end;
+}
+
+[data-gap] {
+  gap: 12px;
+}
+
+[data-vertical] {
+  flex-direction: column;
+}

@@ -1,4 +1,27 @@
+/* santa helpers */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 .button {
   color: royalblue;
   background-color: beige;
+}
+
+[data-button] {
+  width: 256px;
+  border-radius: 20px;
+  height: 40px;
+  border: 0;
+
+  color: #FFFF;
+  background-color: #181B21;
+
+  /* text */
+  font-size: 14px;
+  font-family: 'Roboto';
+}
+
+[data-light='true'] {
+  background-color: #e3e3e3;
+  color: #000000;
 }
