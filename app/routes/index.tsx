@@ -14,15 +14,27 @@ export const links: LinksFunction = () => [
 const TeslaUIPOCV6 = () => {
   return (
     <div>
-      <HappyText title>Tesla v6</HappyText>
-      <HappyText underline>Touchless Delivery</HappyText>
+      {/* <HappyText title>Tesla v6</HappyText>
+      <HappyText underline>Touchless Delivery</HappyText> */}
 
-      <ChevrOn/>
+
+      <Box display="flex" gap vertical>
+        <Box display="grid">
+          <HappyText title>Model X</HappyText>
+          <HappyText>Order Online For</HappyText>
+          <HappyText underline> Touchless Delivery</HappyText>
+        </Box>
+        <Box display="grid">
+          <HappyText title> Solar Panels</HappyText>
+          <HappyText>Lowest Cost Solar Panels in America</HappyText>
+        </Box>
+      </Box>
 
       <Box display='flex' gap vertical>
         <ButtOns light >Model S</ButtOns>
         <ButtOns>Model Y</ButtOns>
       </Box>
+      <ChevrOn/>
 
       {/* <ButtOns>Pekemons</ButtOns>
       <ButtOns>Pekemons</ButtOns>

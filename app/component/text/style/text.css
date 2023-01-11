@@ -9,9 +9,16 @@
   font-family: 'Roboto';
 }
 
+[data-text]:last-child:not([data-underline]){
+  grid-column: 1/-1;
+}
+
 [data-title] {
   font-weight: 500;
   font-size: 40px;
+
+  grid-column: 1/-1;
+  justify-self: center;
 }
 
 [data-underline] {
