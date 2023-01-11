@@ -27,6 +27,7 @@ const Box = ({
       data-box={display}
       data-justify={justify}
       data-section={section}
+      id={section}
     >
       {children}
     </div>

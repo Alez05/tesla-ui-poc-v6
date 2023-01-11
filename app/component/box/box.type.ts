@@ -5,8 +5,8 @@ export const sectionList = [
   'model-y',
   'model-s',
   'model-x',
-  'solar-roof',
   'solar-panel',
+  'solar-roof',
   'accessories',
 ] as const
 type sectionType = typeof sectionList[number]
