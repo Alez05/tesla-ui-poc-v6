@@ -1,4 +1,4 @@
-import { ButtOns, buttonLink, HappyText, textLink, ChevrOn, chevronLink, boxLink, Box} from "~/component"
+import { ButtOns, buttonLink, HappyText, textLink, ChevrOn, chevronLink, boxLink, Box, sectionList} from "~/component"
 
 import type { LinksFunction } from "@remix-run/node"
 import { globalLink } from "~/component/global/global"
@@ -12,11 +12,16 @@ export const links: LinksFunction = () => [
 ]
 
 const TeslaUIPOCV6 = () => {
+
+  console.log(sectionList);
+
   return (
-    <div>
-      <Box  fullHeight display="flex" gap vertical>
+    <>
+    {sectionList.map( (section) => {
+      return(
+      <Box key={section} section={section} fullHeight display="flex" gap vertical>
         <Box display="grid">
-          <HappyText title>Model S</HappyText>
+          <HappyText title>{section}</HappyText>
           <HappyText>Order Online For</HappyText>
           <HappyText underline> Touchless Delivery</HappyText>
         </Box>
@@ -25,21 +30,12 @@ const TeslaUIPOCV6 = () => {
             <ButtOns light>Costum Order</ButtOns>
             <ButtOns>Existing Inventory</ButtOns>
           </Box>
+          <ChevrOn/>
         </Box>
       </Box>
-      <ChevrOn/>
-{/*
-      <Box display='flex' gap vertical>
-        <ButtOns light >Model S</ButtOns>
-        <ButtOns>Model Y</ButtOns>
-      </Box> */}
-
-      {/* <ButtOns>Pekemons</ButtOns>
-      <ButtOns>Pekemons</ButtOns>
-      <ButtOns>sfantul babon</ButtOns>
-      <ButtOns>Pekemons</ButtOns>
-      <ButtOns>Pekemons</ButtOns> */}
-    </div>
+      )
+    })}
+    </>
   )
 }
 

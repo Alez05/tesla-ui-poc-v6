@@ -16,7 +16,8 @@ const Box = ({
   vertical,
   fullHeight,
   align,
-  justify}: T.Box) => {
+  justify,
+  section}: T.Box) => {
   return(
     <div
       data-full-height={fullHeight}
@@ -25,6 +26,7 @@ const Box = ({
       data-align={align}
       data-box={display}
       data-justify={justify}
+      data-section={section}
     >
       {children}
     </div>
